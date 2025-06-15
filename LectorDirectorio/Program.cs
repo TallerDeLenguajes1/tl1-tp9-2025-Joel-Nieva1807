@@ -42,7 +42,7 @@ do
         string rutaDeArchivoNuevo = $"{path}\\reporte_archivos.csv";
         
 
-        using (StreamWriter writer = new StreamWriter(rutaDeArchivoNuevo)) //cierre de ciclo
+        using (StreamWriter writer = new StreamWriter(rutaDeArchivoNuevo)) //cierre de ciclo para escribir dentro de un archivo (abre y cierra automaticamente)
         {
             writer.WriteLine("Nombre, Tamaño, Ultima modificacion");
             foreach (string archivo in archivos)
